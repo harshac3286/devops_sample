@@ -28,6 +28,7 @@ RUN mkdir files playbooks templates group_vars
 # Ansible log path.                
 RUN mkdir -p /var/log/ansible				     
 
+#Changing working directory
 WORKDIR /root
 RUN echo ANSIBLE_CONFIG= /etc/ansible/ansible.cfg >> ~/.profile  
 
